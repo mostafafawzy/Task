@@ -9,7 +9,7 @@ pipeline {
     
      stage('Install dependencies') {
       when {
-                branch 'master'
+                branch 'prod'
       }
       steps {
          sh 'npm install'  
@@ -18,7 +18,7 @@ pipeline {
     
     stage('Test') {
       when {
-                branch 'master'
+                branch 'prod'
       }
       steps {
          sh 'npm test'
