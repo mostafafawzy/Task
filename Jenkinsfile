@@ -9,7 +9,7 @@ pipeline {
     
      stage('Install dependencies') {
       steps {
-         sh 'sudo npm install'  
+         sh 'ls -la'  
       }
     }
     
