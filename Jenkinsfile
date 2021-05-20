@@ -9,14 +9,14 @@ pipeline {
     
      stage('Install dependencies') {
       steps {
-         sh 'ls -la'  
+         sh 'sudo npm install'  
       }
     }
     
     stage('Test') {
       steps {
-         sh 'npm test'
-         sh 'npm run test:e2e'        
+         sh 'sudo npm test'
+         sh 'sudo npm run test:e2e'        
       }
     }
   }
