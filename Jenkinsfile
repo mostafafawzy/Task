@@ -16,7 +16,8 @@ pipeline {
     stage('Test') {
       steps {
          sh 'sudo npm test'
-         sh 'sudo npm run test:e2e'        
+         sh 'sudo npm run test:e2e'  
+        
       }
     }
   }
